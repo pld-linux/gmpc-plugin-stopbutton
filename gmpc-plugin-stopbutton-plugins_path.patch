@@ -1,0 +1,12 @@
+diff -urN gmpc-stopbutton-0.15.5.0/src/Makefile.am gmpc-stopbutton-0.15.5.0.new/src/Makefile.am
+--- gmpc-stopbutton-0.15.5.0/src/Makefile.am	2007-11-29 14:57:56.000000000 +0100
++++ gmpc-stopbutton-0.15.5.0.new/src/Makefile.am	2008-02-04 11:30:50.394068062 +0100
+@@ -1,6 +1,6 @@
+-libdir=${prefix}/share/gmpc/plugins/
++pluginsdir=$(libdir)/gmpc/
+ 
+-lib_LTLIBRARIES = libstopbutton.la
++plugins_LTLIBRARIES = libstopbutton.la
+ 
+ libstopbutton_la_SOURCES=\
+ 	main.c
